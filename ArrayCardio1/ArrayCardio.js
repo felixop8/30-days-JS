@@ -61,4 +61,3 @@ console.log(people.sort((a, b) => a.split(', ')[1] > b.split(', ')[1] ? 1 : -1))
 // To sum up: spread will fill the object with all the current properties inside the object and enable us to overwrite any of them, 
 // and computed properties enables us to use the value of a variable as the actual key of an object.
 const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck' ];
-console.log(data.reduce((acc, curr) => ({...acc, [curr]: (acc[curr] || 0) + 1}), {}));
